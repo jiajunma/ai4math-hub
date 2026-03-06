@@ -4,8 +4,9 @@ title: Home
 ---
 
 <div class="hero">
-  <h1>AI4Math Hub</h1>
-  <p>AI and Mathematics research. Papers, tools, and resources.</p>
+  <h1>{{ site.title }}</h1>
+  <p>人工智能与数学交叉领域的前沿信息平台</p>
+  <p style="color: var(--text-light); font-size: 0.9rem;">{{ site.subtitle }} · Papers, tools, and resources for AI4Math</p>
 </div>
 
 <div class="container">

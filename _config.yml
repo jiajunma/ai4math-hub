@@ -1,7 +1,9 @@
-title: AI4Math Hub
+title: AI4math 信息站
+subtitle: AI4Math Hub
 description: >-
-  The central hub for AI and Mathematics.
-  Aggregating latest research papers, industry news, startups, and open-source projects.
+  AI4math 信息站 - 人工智能与数学交叉领域的前沿信息平台。
+  汇集最新研究论文、行业动态、初创公司和开源项目。
+  The central hub for AI and Mathematics research.
 url: "https://jiajunma.github.io"
 baseurl: "/ai4math-hub"
 repository: jiajunma/ai4math-hub
