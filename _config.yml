@@ -1,0 +1,97 @@
+title: AI4Math Hub
+description: >-
+  人工智能与数学交叉领域的资源导航站。
+  收集AI4Math工具、OpenClaw Skills、课程与教案。
+  开源协作，欢迎贡献！
+baseurl: ""
+url: "https://ai4math.github.io"
+repository: ai4math/ai4math-hub
+
+# 作者信息
+author:
+  name: AI4Math Community
+  email: contact@ai4math.org
+
+# 构建配置
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 插件
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 集合配置
+collections:
+  tools:
+    output: true
+    permalink: /tools/:name/
+  courses:
+    output: true
+    permalink: /courses/:name/
+  skills:
+    output: true
+    permalink: /skills/:name/
+
+# 默认布局
+defaults:
+  - scope:
+      path: ""
+      type: "tools"
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: "skills"
+    values:
+      layout: item
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - vendor/
+  - node_modules/
+
+# 自定义变量
+github_url: https://github.com/ai4math/ai4math-hub
+discord_invite: https://discord.gg/ai4math
+
+# 分类配置
+categories:
+  tools:
+    - name: 形式化证明
+      slug: formalization
+    - name: 符号计算
+      slug: symbolic
+    - name: 定理证明辅助
+      slug: theorem-proving
+    - name: 数学可视化
+      slug: visualization
+    - name: LaTeX工具
+      slug: latex
+  skills:
+    - name: OpenClaw Skills
+      slug: openclaw
+    - name: Claude/ChatGPT Skills
+      slug: llm-skills
+    - name: Prompt工程
+      slug: prompt-engineering
+  courses:
+    - name: Lean教程
+      slug: lean
+    - name: 形式化数学
+      slug: formal-math
+    - name: AI+数学研究
+      slug: ai-math-research

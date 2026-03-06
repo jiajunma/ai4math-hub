@@ -1,0 +1,71 @@
+---
+layout: default
+title: Agent Skills
+---
+
+<div class="item-header">
+  <div class="container">
+    <span class="item-category">Skills</span>
+    <h1>⚡ Agent Skills</h1>
+    <p class="item-description">OpenClaw、Claude Code 等 AI Agent 的 Skills 集合</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <!-- 分类筛选 -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="openclaw">OpenClaw</button>
+      <button class="filter-btn" data-filter="claude">Claude</button>
+      <button class="filter-btn" data-filter="general">通用</button>
+    </div>
+
+    <!-- Skills列表 -->
+    <div class="items-list">
+      {% for skill in site.skills %}
+      <div class="item-row" data-category="{{ skill.type }}">
+        <div class="item-row-icon">{{ skill.icon | default: '⚡' }}</div>
+        <div class="item-row-content">
+          <h3><a href="{{ skill.url | relative_url }}">{{ skill.title }}</a></h3>
+          <p>{{ skill.description }}</p>
+          <div class="item-row-meta">
+            <span class="tag">{{ skill.type | capitalize }}</span>
+            {% if skill.author %}
+            <span class="tag">👤 {{ skill.author }}</span>
+            {% endif %}
+            {% for tag in skill.tags limit:3 %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if site.skills.size == 0 %}
+    <div class="text-center" style="padding: 60px 0; color: var(--color-text-light);">
+      <p>📝 还没有 Skills 条目</p>
+      <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-primary">成为第一个贡献者</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.item-row').forEach(row => {
+      if (filter === 'all' || row.dataset.category === filter) {
+        row.style.display = 'flex';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  });
+});
+</script>

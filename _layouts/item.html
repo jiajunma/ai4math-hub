@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<article class="item-page">
+  <header class="item-header">
+    <div class="container">
+      {% if page.category %}
+      <span class="item-category">{{ page.category }}</span>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="item-description">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="item-content">
+    <div class="container">
+      {% if page.url or page.github or page.docs %}
+      <div class="item-links">
+        {% if page.url %}
+        <a href="{{ page.url }}" target="_blank" class="btn btn-primary">访问官网</a>
+        {% endif %}
+        {% if page.github %}
+        <a href="{{ page.github }}" target="_blank" class="btn btn-secondary">GitHub</a>
+        {% endif %}
+        {% if page.docs %}
+        <a href="{{ page.docs }}" target="_blank" class="btn btn-secondary">文档</a>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if page.tags %}
+      <div class="item-tags">
+        {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="item-body">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</article>

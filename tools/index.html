@@ -1,0 +1,74 @@
+---
+layout: default
+title: AI4Math 工具
+---
+
+<div class="item-header">
+  <div class="container">
+    <span class="item-category">Tools</span>
+    <h1>🛠️ AI4Math 工具</h1>
+    <p class="item-description">形式化证明、符号计算、定理证明辅助、数学可视化等工具集合</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <!-- 分类筛选 -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="formalization">形式化证明</button>
+      <button class="filter-btn" data-filter="symbolic">符号计算</button>
+      <button class="filter-btn" data-filter="ai-math">AI 数学</button>
+      <button class="filter-btn" data-filter="visualization">可视化</button>
+      <button class="filter-btn" data-filter="latex">LaTeX</button>
+    </div>
+
+    <!-- 工具列表 -->
+    <div class="items-list">
+      {% for tool in site.tools %}
+      <div class="item-row" data-category="{{ tool.tags | join: ' ' }}">
+        <div class="item-row-icon">{{ tool.icon | default: '🛠️' }}</div>
+        <div class="item-row-content">
+          <h3><a href="{{ tool.url | relative_url }}">{{ tool.title }}</a></h3>
+          <p>{{ tool.description }}</p>
+          <div class="item-row-meta">
+            <span class="tag">{{ tool.category }}</span>
+            {% for tag in tool.tags limit:3 %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+            {% if tool.difficulty %}
+            <span class="tag">{{ tool.difficulty }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if site.tools.size == 0 %}
+    <div class="text-center" style="padding: 60px 0; color: var(--color-text-light);">
+      <p>📝 还没有工具条目</p>
+      <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-primary">成为第一个贡献者</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+// 简单的筛选功能
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.item-row').forEach(row => {
+      if (filter === 'all' || row.dataset.category.includes(filter)) {
+        row.style.display = 'flex';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
