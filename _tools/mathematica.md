@@ -58,6 +58,7 @@ Download and install, then launch Wolfram Notebook.
 
 ## Example Code
 
+{% raw %}
 ```mathematica
 (* Solve equations *)
 Solve[x^2 - 2 x + 1 == 0, x]
@@ -74,6 +75,7 @@ Plot3D[Sin[x y], {x, 0, 3}, {y, 0, 3}]
 (* Symbolic matrix operations *)
 MatrixExp[{{0, 1}, {-1, 0}} t]
 ```
+{% endraw %}
 
 ## Wolfram Alpha
 
