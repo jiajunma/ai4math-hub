@@ -1,8 +1,7 @@
 title: AI4Math Hub
 description: >-
-  A curated resource hub for AI and Mathematics.
-  Collecting AI4Math tools, OpenClaw Skills, courses, and educational materials.
-  Open source and community-driven. Contributions welcome!
+  The central hub for AI and Mathematics.
+  Aggregating latest research papers, industry news, startups, and open-source projects.
 url: "https://jiajunma.github.io"
 baseurl: "/ai4math-hub"
 repository: jiajunma/ai4math-hub
@@ -26,18 +25,42 @@ plugins:
 
 # Collections
 collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+  companies:
+    output: true
+    permalink: /companies/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
   tools:
     output: true
-    permalink: /:collection/:name/
+    permalink: /tools/:name/
   courses:
     output: true
-    permalink: /:collection/:name/
+    permalink: /courses/:name/
   skills:
     output: true
-    permalink: /:collection/:name/
+    permalink: /skills/:name/
 
 # Default layouts
 defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: "companies"
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: item
   - scope:
       path: ""
       type: "tools"
@@ -68,30 +91,32 @@ exclude:
 github_url: https://github.com/jiajunma/ai4math-hub
 discord_invite: https://discord.gg/ai4math
 
-# Category configuration
-categories:
-  tools:
-    - name: Formal Proof
-      slug: formalization
-    - name: Symbolic Computation
-      slug: symbolic
-    - name: Theorem Proving Assistance
-      slug: theorem-proving
-    - name: Mathematical Visualization
-      slug: visualization
-    - name: LaTeX Tools
-      slug: latex
-  skills:
-    - name: OpenClaw Skills
-      slug: openclaw
-    - name: Claude/ChatGPT Skills
-      slug: llm-skills
-    - name: Prompt Engineering
-      slug: prompt-engineering
-  courses:
-    - name: Lean Tutorials
-      slug: lean
-    - name: Formal Mathematics
-      slug: formal-math
-    - name: AI+Math Research
-      slug: ai-math-research
+# Paper categories
+paper_categories:
+  - name: Automated Theorem Proving
+    slug: atp
+  - name: Neural Theorem Proving
+    slug: ntp
+  - name: Mathematical Reasoning
+    slug: reasoning
+  - name: Autoformalization
+    slug: autoformalization
+  - name: Formal Verification
+    slug: verification
+  - name: Math Education AI
+    slug: education
+  - name: Symbolic-Neural Hybrid
+    slug: hybrid
+
+# Company categories
+company_categories:
+  - name: AI Math Education
+    slug: education
+  - name: Theorem Proving
+    slug: theorem-proving
+  - name: Formal Verification
+    slug: verification
+  - name: Math Reasoning Engines
+    slug: reasoning
+  - name: Research Labs
+    slug: research

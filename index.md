@@ -7,14 +7,14 @@ title: Home
   <div class="container">
     <h1>🧮 AI4Math Hub</h1>
     <p class="subtitle">
-      A curated resource hub at the intersection of AI and Mathematics.
+      The central hub for AI and Mathematics research.
       <br>
-      Tools, Skills, and courses to empower your AI4Math journey.
+      Papers, companies, projects, and tools—all in one place.
     </p>
     <div class="hero-actions">
-      <a href="{{ '/tools/' | relative_url }}" class="btn btn-primary">Browse Tools</a>
-      <a href="{{ '/courses/' | relative_url }}" class="btn btn-secondary">View Courses</a>
-      <a href="{{ site.github_url }}" target="_blank" class="btn btn-outline">Contribute</a>
+      <a href="{{ '/papers/' | relative_url }}" class="btn btn-primary">Browse Papers</a>
+      <a href="{{ '/companies/' | relative_url }}" class="btn btn-secondary">Explore Companies</a>
+      <a href="{{ '/projects/' | relative_url }}" class="btn btn-outline">View Projects</a>
     </div>
   </div>
 </section>
@@ -23,20 +23,20 @@ title: Home
   <div class="container">
     <div class="stats-grid">
       <div class="stat-item">
+        <span class="stat-number">{{ site.papers | size }}</span>
+        <span class="stat-label">Papers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">{{ site.companies | size }}</span>
+        <span class="stat-label">Companies</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">{{ site.projects | size }}</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-item">
         <span class="stat-number">{{ site.tools | size }}</span>
         <span class="stat-label">Tools</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">{{ site.skills | size }}</span>
-        <span class="stat-label">Skills</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">{{ site.courses | size }}</span>
-        <span class="stat-label">Courses</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">∞</span>
-        <span class="stat-label">Possibilities</span>
       </div>
     </div>
   </div>
@@ -45,37 +45,38 @@ title: Home
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <h2>Explore Resources</h2>
-      <p>Three core sections covering the full AI4Math workflow</p>
+      <h2>Latest Research</h2>
+      <p>Recent papers from arXiv and conferences</p>
     </div>
     
-    <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon">🛠️</div>
-        <h3><a href="{{ '/tools/' | relative_url }}">AI4Math Tools</a></h3>
-        <p>Formal proof assistants, symbolic computation, theorem provers, and mathematical visualization tools. From Lean 4 to Mathematica, find the right tool for your needs.</p>
-        <div class="card-meta">
-          <span>📝 {{ site.tools | size }} Tools</span>
+    <div class="items-list">
+      {% assign recent_papers = site.papers | sort: 'date' | reverse | limit: 5 %}
+      {% for paper in recent_papers %}
+      <div class="item-row">
+        <div class="item-row-icon">📄</div>
+        <div class="item-row-content">
+          <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
+          <p>{{ paper.description | truncate: 150 }}</p>
+          <div class="item-row-meta">
+            <span class="tag">{{ paper.category }}</span>
+            <span class="tag">{{ paper.date | date: "%b %Y" }}</span>
+            {% if paper.venue %}
+            <span class="tag">{{ paper.venue }}</span>
+            {% endif %}
+          </div>
         </div>
       </div>
+      {% endfor %}
       
-      <div class="card">
-        <div class="card-icon">⚡</div>
-        <h3><a href="{{ '/skills/' | relative_url }}">Agent Skills</a></h3>
-        <p>Skills for OpenClaw, Claude Code, and other AI Agents. Enhance AI capabilities in mathematics, from paper analysis to LaTeX processing.</p>
-        <div class="card-meta">
-          <span>🔧 {{ site.skills | size }} Skills</span>
-        </div>
+      {% if site.papers.size == 0 %}
+      <div class="text-center" style="padding: 40px 0; color: var(--color-text-light);">
+        <p>No papers yet. Check back soon!</p>
       </div>
-      
-      <div class="card">
-        <div class="card-icon">📚</div>
-        <h3><a href="{{ '/courses/' | relative_url }}">Courses & Materials</a></h3>
-        <p>Lean tutorials, formal mathematics courses, and AI+Math research resources. Videos, documents, and interactive tutorials from beginner to advanced.</p>
-        <div class="card-meta">
-          <span>🎓 {{ site.courses | size }} Courses</span>
-        </div>
-      </div>
+      {% endif %}
+    </div>
+    
+    <div class="text-center mt-4">
+      <a href="{{ '/papers/' | relative_url }}" class="btn btn-outline">View All Papers</a>
     </div>
   </div>
 </section>
@@ -83,50 +84,35 @@ title: Home
 <section class="section" style="background: var(--color-bg-alt);">
   <div class="container">
     <div class="section-header">
-      <h2>Popular Categories</h2>
-      <p>Quickly find what you need</p>
+      <h2>Featured Companies</h2>
+      <p>Leading AI4Math startups and research labs</p>
     </div>
     
-    <div class="categories-grid">
-      <div class="category-card">
-        <h3>📐 Formal Proof</h3>
-        <ul>
-          <li><a href="{{ '/tools/' | relative_url }}">Lean 4 / Lean 3</a></li>
-          <li><a href="{{ '/tools/' | relative_url }}">Coq</a></li>
-          <li><a href="{{ '/tools/' | relative_url }}">Isabelle</a></li>
-          <li><a href="{{ '/tools/' | relative_url }}">Metamath</a></li>
-        </ul>
+    <div class="cards-grid">
+      {% assign featured_companies = site.companies | limit: 6 %}
+      {% for company in featured_companies %}
+      <div class="card">
+        <div class="card-icon">{{ company.icon | default: '🏢' }}</div>
+        <h3><a href="{{ company.url | relative_url }}">{{ company.title }}</a></h3>
+        <p>{{ company.description | truncate: 120 }}</p>
+        <div class="card-meta">
+          <span>{{ company.category }}</span>
+          {% if company.funding %}
+          <span>💰 {{ company.funding }}</span>
+          {% endif %}
+        </div>
       </div>
+      {% endfor %}
       
-      <div class="category-card">
-        <h3>🤖 AI Math Tools</h3>
-        <ul>
-          <li><a href="{{ '/tools/' | relative_url }}">Autoformalization</a></li>
-          <li><a href="{{ '/tools/' | relative_url }}">Neural Theorem Provers</a></li>
-          <li><a href="{{ '/tools/' | relative_url }}">Math QA Systems</a></li>
-          <li><a href="{{ '/tools/' | relative_url }}">Formula Recognition</a></li>
-        </ul>
+      {% if site.companies.size == 0 %}
+      <div class="text-center" style="padding: 40px 0; color: var(--color-text-light); grid-column: 1 / -1;">
+        <p>No companies listed yet. Check back soon!</p>
       </div>
-      
-      <div class="category-card">
-        <h3>🎯 OpenClaw Skills</h3>
-        <ul>
-          <li><a href="{{ '/skills/' | relative_url }}">Paper Analysis</a></li>
-          <li><a href="{{ '/skills/' | relative_url }}">LaTeX/PDF Processing</a></li>
-          <li><a href="{{ '/skills/' | relative_url }}">Math Visualization</a></li>
-          <li><a href="{{ '/skills/' | relative_url }}">Formula Processing</a></li>
-        </ul>
-      </div>
-      
-      <div class="category-card">
-        <h3>📖 Learning Resources</h3>
-        <ul>
-          <li><a href="{{ '/courses/' | relative_url }}">Natural Number Game</a></li>
-          <li><a href="{{ '/courses/' | relative_url }}">Theorem Proving in Lean 4</a></li>
-          <li><a href="{{ '/courses/' | relative_url }}">Mathematics in Lean</a></li>
-          <li><a href="{{ '/courses/' | relative_url }}">More Courses</a></li>
-        </ul>
-      </div>
+      {% endif %}
+    </div>
+    
+    <div class="text-center mt-4">
+      <a href="{{ '/companies/' | relative_url }}" class="btn btn-outline">View All Companies</a>
     </div>
   </div>
 </section>
@@ -134,29 +120,70 @@ title: Home
 <section class="section">
   <div class="container">
     <div class="section-header">
+      <h2>Trending Projects</h2>
+      <p>Popular open-source projects on GitHub</p>
+    </div>
+    
+    <div class="items-list">
+      {% assign trending_projects = site.projects | limit: 5 %}
+      {% for project in trending_projects %}
+      <div class="item-row">
+        <div class="item-row-icon">⚡</div>
+        <div class="item-row-content">
+          <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+          <p>{{ project.description | truncate: 150 }}</p>
+          <div class="item-row-meta">
+            <span class="tag">{{ project.language }}</span>
+            {% if project.stars %}
+            <span class="tag">⭐ {{ project.stars }}</span>
+            {% endif %}
+            {% for tag in project.tags limit:2 %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      
+      {% if site.projects.size == 0 %}
+      <div class="text-center" style="padding: 40px 0; color: var(--color-text-light);">
+        <p>No projects yet. Check back soon!</p>
+      </div>
+      {% endif %}
+    </div>
+    
+    <div class="text-center mt-4">
+      <a href="{{ '/projects/' | relative_url }}" class="btn btn-outline">View All Projects</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--color-bg-alt);">
+  <div class="container">
+    <div class="section-header">
       <h2>Get Involved</h2>
-      <p>An open-source community project. Join us!</p>
+      <p>Help build the AI4Math community</p>
     </div>
     
     <div class="cards-grid">
       <div class="card">
-        <div class="card-icon">➕</div>
-        <h3>Add Resources</h3>
-        <p>Found a great tool, course, or Skill? Share it with the community via Pull Request.</p>
-        <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-outline" style="margin-top: 16px;">View Guide</a>
+        <div class="card-icon">📄</div>
+        <h3>Add Papers</h3>
+        <p>Share the latest AI4Math research from arXiv and conferences.</p>
+        <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-outline" style="margin-top: 16px;">Learn More</a>
       </div>
       
       <div class="card">
-        <div class="card-icon">🐛</div>
-        <h3>Report Issues</h3>
-        <p>Broken links or incorrect information? Let us know via GitHub Issues.</p>
-        <a href="{{ site.github_url }}/issues" target="_blank" class="btn btn-outline" style="margin-top: 16px;">Submit Issue</a>
+        <div class="card-icon">🏢</div>
+        <h3>Add Companies</h3>
+        <p>Help track the growing AI4Math startup ecosystem.</p>
+        <a href="{{ site.github_url }}/issues" target="_blank" class="btn btn-outline" style="margin-top: 16px;">Submit Company</a>
       </div>
       
       <div class="card">
         <div class="card-icon">💬</div>
         <h3>Join Discussion</h3>
-        <p>Connect with other AI4Math enthusiasts on Discord.</p>
+        <p>Connect with researchers and practitioners on Discord.</p>
         <a href="{{ site.discord_invite }}" target="_blank" class="btn btn-outline" style="margin-top: 16px;">Join Discord</a>
       </div>
     </div>

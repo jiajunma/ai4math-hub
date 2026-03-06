@@ -1,0 +1,79 @@
+---
+layout: default
+title: Companies
+---
+
+<div class="item-header">
+  <div class="container">
+    <span class="item-category">Industry</span>
+    <h1>🏢 AI4Math Companies</h1>
+    <p class="item-description">Startups, research labs, and organizations pushing the boundaries of AI and Mathematics</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <!-- Category filters -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="education">AI Math Education</button>
+      <button class="filter-btn" data-filter="theorem-proving">Theorem Proving</button>
+      <button class="filter-btn" data-filter="verification">Formal Verification</button>
+      <button class="filter-btn" data-filter="reasoning">Reasoning Engines</button>
+      <button class="filter-btn" data-filter="research">Research Labs</button>
+    </div>
+
+    <!-- Companies grid -->
+    <div class="cards-grid">
+      {% for company in site.companies %}
+      <div class="card" data-category="{{ company.category_slug }}">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+          <div class="card-icon" style="margin: 0; font-size: 2.5rem;">{{ company.icon | default: '🏢' }}</div>
+          <div>
+            <h3 style="margin: 0;"><a href="{{ company.url | relative_url }}">{{ company.title }}</a></h3>
+            <span style="font-size: 0.85rem; color: var(--color-text-light);">{{ company.location }}</span>
+          </div>
+        </div>
+        
+        <p>{{ company.description }}</p>
+        
+        <div class="card-meta">
+          <span class="tag">{{ company.category }}</span>
+          {% if company.funding %}
+          <span class="tag">💰 {{ company.funding }}</span>
+          {% endif %}
+        </div>
+        
+        {% if company.website %}
+        <a href="{{ company.website }}" target="_blank" class="btn btn-secondary" style="margin-top: 12px; display: inline-block;">Visit Website →</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if site.companies.size == 0 %}
+    <div class="text-center" style="padding: 60px 0; color: var(--color-text-light);">
+      <p>🏢 No companies listed yet. Help us build the directory!</p>
+      <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-primary">Add a Company</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.card').forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
