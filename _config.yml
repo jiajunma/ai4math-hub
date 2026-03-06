@@ -3,7 +3,6 @@ description: >-
   A curated resource hub for AI and Mathematics.
   Collecting AI4Math tools, OpenClaw Skills, courses, and educational materials.
   Open source and community-driven. Contributions welcome!
-baseurl: ""
 url: "https://jiajunma.github.io"
 baseurl: "/ai4math-hub"
 repository: jiajunma/ai4math-hub
@@ -29,13 +28,13 @@ plugins:
 collections:
   tools:
     output: true
-    permalink: /tools/:name/
+    permalink: /:collection/:name/
   courses:
     output: true
-    permalink: /courses/:name/
+    permalink: /:collection/:name/
   skills:
     output: true
-    permalink: /skills/:name/
+    permalink: /:collection/:name/
 
 # Default layouts
 defaults:
