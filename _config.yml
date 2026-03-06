@@ -4,8 +4,9 @@ description: >-
   收集AI4Math工具、OpenClaw Skills、课程与教案。
   开源协作，欢迎贡献！
 baseurl: ""
-url: "https://ai4math.github.io"
-repository: ai4math/ai4math-hub
+url: "https://jiajunma.github.io"
+baseurl: "/ai4math-hub"
+repository: jiajunma/ai4math-hub
 
 # 作者信息
 author:
@@ -65,7 +66,7 @@ exclude:
   - node_modules/
 
 # 自定义变量
-github_url: https://github.com/ai4math/ai4math-hub
+github_url: https://github.com/jiajunma/ai4math-hub
 discord_invite: https://discord.gg/ai4math
 
 # 分类配置
