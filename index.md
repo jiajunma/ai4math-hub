@@ -1,20 +1,20 @@
 ---
 layout: default
-title: 首页
+title: Home
 ---
 
 <section class="hero">
   <div class="container">
     <h1>🧮 AI4Math Hub</h1>
     <p class="subtitle">
-      人工智能与数学交叉领域的资源导航站。
+      A curated resource hub at the intersection of AI and Mathematics.
       <br>
-      汇集工具、Skills 和课程，助力 AI4Math 探索。
+      Tools, Skills, and courses to empower your AI4Math journey.
     </p>
     <div class="hero-actions">
-      <a href="{{ '/tools/' | relative_url }}" class="btn btn-primary">浏览工具</a>
-      <a href="{{ '/courses/' | relative_url }}" class="btn btn-secondary">查看课程</a>
-      <a href="{{ site.github_url }}" target="_blank" class="btn btn-outline">参与贡献</a>
+      <a href="{{ '/tools/' | relative_url }}" class="btn btn-primary">Browse Tools</a>
+      <a href="{{ '/courses/' | relative_url }}" class="btn btn-secondary">View Courses</a>
+      <a href="{{ site.github_url }}" target="_blank" class="btn btn-outline">Contribute</a>
     </div>
   </div>
 </section>
@@ -24,7 +24,7 @@ title: 首页
     <div class="stats-grid">
       <div class="stat-item">
         <span class="stat-number">{{ site.tools | size }}</span>
-        <span class="stat-label">工具</span>
+        <span class="stat-label">Tools</span>
       </div>
       <div class="stat-item">
         <span class="stat-number">{{ site.skills | size }}</span>
@@ -32,11 +32,11 @@ title: 首页
       </div>
       <div class="stat-item">
         <span class="stat-number">{{ site.courses | size }}</span>
-        <span class="stat-label">课程</span>
+        <span class="stat-label">Courses</span>
       </div>
       <div class="stat-item">
         <span class="stat-number">∞</span>
-        <span class="stat-label">可能</span>
+        <span class="stat-label">Possibilities</span>
       </div>
     </div>
   </div>
@@ -45,35 +45,35 @@ title: 首页
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <h2>探索资源</h2>
-      <p>三大核心板块，覆盖 AI4Math 全流程</p>
+      <h2>Explore Resources</h2>
+      <p>Three core sections covering the full AI4Math workflow</p>
     </div>
     
     <div class="cards-grid">
       <div class="card">
         <div class="card-icon">🛠️</div>
-        <h3><a href="{{ '/tools/' | relative_url }}">AI4Math 工具</a></h3>
-        <p>形式化证明、符号计算、定理证明辅助、数学可视化等工具集合。从 Lean 4 到 Mathematica，找到适合你的工具。</p>
+        <h3><a href="{{ '/tools/' | relative_url }}">AI4Math Tools</a></h3>
+        <p>Formal proof assistants, symbolic computation, theorem provers, and mathematical visualization tools. From Lean 4 to Mathematica, find the right tool for your needs.</p>
         <div class="card-meta">
-          <span>📝 {{ site.tools | size }} 个工具</span>
+          <span>📝 {{ site.tools | size }} Tools</span>
         </div>
       </div>
       
       <div class="card">
         <div class="card-icon">⚡</div>
         <h3><a href="{{ '/skills/' | relative_url }}">Agent Skills</a></h3>
-        <p>OpenClaw、Claude Code 等 AI Agent 的 Skills 集合。提升 AI 在数学领域的能力，从论文分析到 LaTeX 处理。</p>
+        <p>Skills for OpenClaw, Claude Code, and other AI Agents. Enhance AI capabilities in mathematics, from paper analysis to LaTeX processing.</p>
         <div class="card-meta">
-          <span>🔧 {{ site.skills | size }} 个 Skills</span>
+          <span>🔧 {{ site.skills | size }} Skills</span>
         </div>
       </div>
       
       <div class="card">
         <div class="card-icon">📚</div>
-        <h3><a href="{{ '/courses/' | relative_url }}">课程与教案</a></h3>
-        <p>Lean 教程、形式化数学课程、AI+数学研究资源。视频、文档、互动教程，从入门到进阶。</p>
+        <h3><a href="{{ '/courses/' | relative_url }}">Courses & Materials</a></h3>
+        <p>Lean tutorials, formal mathematics courses, and AI+Math research resources. Videos, documents, and interactive tutorials from beginner to advanced.</p>
         <div class="card-meta">
-          <span>🎓 {{ site.courses | size }} 门课程</span>
+          <span>🎓 {{ site.courses | size }} Courses</span>
         </div>
       </div>
     </div>
@@ -83,13 +83,13 @@ title: 首页
 <section class="section" style="background: var(--color-bg-alt);">
   <div class="container">
     <div class="section-header">
-      <h2>热门分类</h2>
-      <p>快速找到你需要的资源</p>
+      <h2>Popular Categories</h2>
+      <p>Quickly find what you need</p>
     </div>
     
     <div class="categories-grid">
       <div class="category-card">
-        <h3>📐 形式化证明</h3>
+        <h3>📐 Formal Proof</h3>
         <ul>
           <li><a href="{{ '/tools/' | relative_url }}">Lean 4 / Lean 3</a></li>
           <li><a href="{{ '/tools/' | relative_url }}">Coq</a></li>
@@ -99,32 +99,32 @@ title: 首页
       </div>
       
       <div class="category-card">
-        <h3>🤖 AI 数学工具</h3>
+        <h3>🤖 AI Math Tools</h3>
         <ul>
-          <li><a href="{{ '/tools/' | relative_url }}">自动形式化</a></li>
-          <li><a href="{{ '/tools/' | relative_url }}">神经定理证明</a></li>
-          <li><a href="{{ '/tools/' | relative_url }}">数学问答系统</a></li>
-          <li><a href="{{ '/tools/' | relative_url }}">公式识别</a></li>
+          <li><a href="{{ '/tools/' | relative_url }}">Autoformalization</a></li>
+          <li><a href="{{ '/tools/' | relative_url }}">Neural Theorem Provers</a></li>
+          <li><a href="{{ '/tools/' | relative_url }}">Math QA Systems</a></li>
+          <li><a href="{{ '/tools/' | relative_url }}">Formula Recognition</a></li>
         </ul>
       </div>
       
       <div class="category-card">
         <h3>🎯 OpenClaw Skills</h3>
         <ul>
-          <li><a href="{{ '/skills/' | relative_url }}">论文分析</a></li>
-          <li><a href="{{ '/skills/' | relative_url }}">LaTeX/PDF 处理</a></li>
-          <li><a href="{{ '/skills/' | relative_url }}">数学可视化</a></li>
-          <li><a href="{{ '/skills/' | relative_url }}">公式处理</a></li>
+          <li><a href="{{ '/skills/' | relative_url }}">Paper Analysis</a></li>
+          <li><a href="{{ '/skills/' | relative_url }}">LaTeX/PDF Processing</a></li>
+          <li><a href="{{ '/skills/' | relative_url }}">Math Visualization</a></li>
+          <li><a href="{{ '/skills/' | relative_url }}">Formula Processing</a></li>
         </ul>
       </div>
       
       <div class="category-card">
-        <h3>📖 学习资源</h3>
+        <h3>📖 Learning Resources</h3>
         <ul>
           <li><a href="{{ '/courses/' | relative_url }}">Natural Number Game</a></li>
           <li><a href="{{ '/courses/' | relative_url }}">Theorem Proving in Lean 4</a></li>
           <li><a href="{{ '/courses/' | relative_url }}">Mathematics in Lean</a></li>
-          <li><a href="{{ '/courses/' | relative_url }}">更多课程</a></li>
+          <li><a href="{{ '/courses/' | relative_url }}">More Courses</a></li>
         </ul>
       </div>
     </div>
@@ -134,30 +134,30 @@ title: 首页
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <h2>参与贡献</h2>
-      <p>这是一个开源社区项目，欢迎你的加入！</p>
+      <h2>Get Involved</h2>
+      <p>An open-source community project. Join us!</p>
     </div>
     
     <div class="cards-grid">
       <div class="card">
         <div class="card-icon">➕</div>
-        <h3>添加资源</h3>
-        <p>发现好用的工具、课程或 Skill？通过 Pull Request 分享给大家。</p>
-        <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-outline" style="margin-top: 16px;">查看指南</a>
+        <h3>Add Resources</h3>
+        <p>Found a great tool, course, or Skill? Share it with the community via Pull Request.</p>
+        <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-outline" style="margin-top: 16px;">View Guide</a>
       </div>
       
       <div class="card">
         <div class="card-icon">🐛</div>
-        <h3>报告问题</h3>
-        <p>链接失效、信息错误？在 GitHub Issues 中告诉我们。</p>
-        <a href="{{ site.github_url }}/issues" target="_blank" class="btn btn-outline" style="margin-top: 16px;">提交 Issue</a>
+        <h3>Report Issues</h3>
+        <p>Broken links or incorrect information? Let us know via GitHub Issues.</p>
+        <a href="{{ site.github_url }}/issues" target="_blank" class="btn btn-outline" style="margin-top: 16px;">Submit Issue</a>
       </div>
       
       <div class="card">
         <div class="card-icon">💬</div>
-        <h3>加入讨论</h3>
-        <p>在 Discord 与其他 AI4Math 爱好者交流心得、分享发现。</p>
-        <a href="{{ site.discord_invite }}" target="_blank" class="btn btn-outline" style="margin-top: 16px;">加入 Discord</a>
+        <h3>Join Discussion</h3>
+        <p>Connect with other AI4Math enthusiasts on Discord.</p>
+        <a href="{{ site.discord_invite }}" target="_blank" class="btn btn-outline" style="margin-top: 16px;">Join Discord</a>
       </div>
     </div>
   </div>

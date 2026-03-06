@@ -1,87 +1,87 @@
 ---
 title: Coq
-description: 经典的交互式定理证明器，广泛用于形式化数学和程序验证
-category: 形式化证明
+description: Classic interactive theorem prover widely used in formal mathematics and program verification
+category: Formal Proof
 icon: 🐓
 tags: [coq, theorem-proving, formalization, program-verification]
-difficulty: 高级
-cost: 免费
+difficulty: Advanced
+cost: Free
 url: https://coq.inria.fr/
 github: https://github.com/coq/coq
 docs: https://coq.inria.fr/documentation
 ---
 
-## 简介
+## Introduction
 
-Coq 是一个形式化证明管理系统，提供了一种形式语言来编写数学定义、可执行算法和定理，以及一个用于机器检查证明构建的交互式环境。
+Coq is a formal proof management system. It provides a formal language to write mathematical definitions, executable algorithms, and theorems, together with an environment for semi-interactive development of machine-checked proofs.
 
-Coq 是形式化数学领域最具影响力的工具之一，著名的应用包括：
-- 四色定理的形式化证明
-- CompCert C 编译器的形式化验证
-- Feit-Thompson 定理（奇数阶定理）的形式化证明
+Coq is one of the most influential tools in formal mathematics, with notable applications including:
+- Formal proof of the Four Color Theorem
+- Formal verification of the CompCert C compiler
+- Formal proof of the Feit-Thompson theorem (Odd Order Theorem)
 
-## 主要特性
+## Key Features
 
-### 📐 归纳构造演算 (Calculus of Inductive Constructions)
-Coq 基于强大的类型理论，支持：
-- 依赖类型
-- 归纳类型
-- 共归纳类型
+### 📐 Calculus of Inductive Constructions
+Coq is based on a powerful type theory supporting:
+- Dependent types
+- Inductive types
+- Coinductive types
 
-### 🎯 Ltac 策略语言
-强大的证明自动化语言，可以编写复杂的证明策略。
+### 🎯 Ltac Tactic Language
+A powerful proof automation language for writing complex proof strategies.
 
-### 🔧 生态系统
-- **MathComp**: 数学组件库
-- **SSReflect**: 结构化的证明风格
-- **CoqIDE**: 集成开发环境
+### 🔧 Ecosystem
+- **MathComp**: Mathematical Components library
+- **SSReflect**: Structured proof style
+- **CoqIDE**: Integrated development environment
 
-## 安装
+## Installation
 
-### 通过 OPAM（推荐）
+### Via OPAM (Recommended)
 
 ```bash
-# 安装 OPAM
+# Install OPAM
 # macOS: brew install opam
 # Ubuntu: apt install opam
 
-# 初始化 OPAM
+# Initialize OPAM
 opam init
 
-# 安装 Coq
+# Install Coq
 opam install coq
 ```
 
-### 二进制包
+### Binary Packages
 
-从 [官方下载页](https://github.com/coq/coq/releases) 获取。
+Download from [official releases](https://github.com/coq/coq/releases).
 
-## 快速开始
+## Quick Start
 
 ```bash
-# 启动 CoqIDE
+# Start CoqIDE
 coqide
 
-# 或命令行
+# Or command line
 coqtop
 ```
 
-## 示例代码
+## Example Code
 
 ```coq
-(* 定义自然数 *)
+(* Define natural numbers *)
 Inductive nat : Type :=
   | O : nat
   | S : nat -> nat.
 
-(* 定义加法 *)
+(* Define addition *)
 Fixpoint add (n m : nat) : nat :=
   match n with
   | O => m
   | S n' => S (add n' m)
   end.
 
-(* 证明加法右单位元 *)
+(* Prove right identity of addition *)
 Theorem add_n_O : forall n : nat, add n O = n.
 Proof.
   intros n. induction n as [| n' IHn'].
@@ -90,19 +90,19 @@ Proof.
 Qed.
 ```
 
-## 学习资源
+## Learning Resources
 
-- [Software Foundations](https://softwarefoundations.cis.upenn.edu/) - 经典教程系列
-- [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/) - Adam Chlipala 著
-- [Coq'Art](https://www.labri.fr/perso/casteran/CoqArt/) - 经典教科书
+- [Software Foundations](https://softwarefoundations.cis.upenn.edu/) - Classic tutorial series
+- [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/) - By Adam Chlipala
+- [Coq'Art](https://www.labri.fr/perso/casteran/CoqArt/) - Classic textbook
 
-## 著名项目
+## Notable Projects
 
-- [Mathematical Components](https://math-comp.github.io/) - 数学库
-- [CompCert](http://compcert.inria.fr/) - 验证的 C 编译器
-- [VST](https://vst.cs.princeton.edu/) - 程序验证工具
+- [Mathematical Components](https://math-comp.github.io/) - Math library
+- [CompCert](http://compcert.inria.fr/) - Verified C compiler
+- [VST](https://vst.cs.princeton.edu/) - Program verification tools
 
-## 社区
+## Community
 
 - [Coq Discourse](https://coq.discourse.group/)
 - [Coq Zulip](https://coq.zulipchat.com/)

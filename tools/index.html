@@ -1,29 +1,29 @@
 ---
 layout: default
-title: AI4Math 工具
+title: AI4Math Tools
 ---
 
 <div class="item-header">
   <div class="container">
     <span class="item-category">Tools</span>
-    <h1>🛠️ AI4Math 工具</h1>
-    <p class="item-description">形式化证明、符号计算、定理证明辅助、数学可视化等工具集合</p>
+    <h1>🛠️ AI4Math Tools</h1>
+    <p class="item-description">Formal proof assistants, symbolic computation, theorem provers, and mathematical visualization</p>
   </div>
 </div>
 
 <div class="section">
   <div class="container">
-    <!-- 分类筛选 -->
+    <!-- Category filters -->
     <div class="filter-bar">
-      <button class="filter-btn active" data-filter="all">全部</button>
-      <button class="filter-btn" data-filter="formalization">形式化证明</button>
-      <button class="filter-btn" data-filter="symbolic">符号计算</button>
-      <button class="filter-btn" data-filter="ai-math">AI 数学</button>
-      <button class="filter-btn" data-filter="visualization">可视化</button>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="formalization">Formal Proof</button>
+      <button class="filter-btn" data-filter="symbolic">Symbolic Computation</button>
+      <button class="filter-btn" data-filter="ai-math">AI Math</button>
+      <button class="filter-btn" data-filter="visualization">Visualization</button>
       <button class="filter-btn" data-filter="latex">LaTeX</button>
     </div>
 
-    <!-- 工具列表 -->
+    <!-- Tools list -->
     <div class="items-list">
       {% for tool in site.tools %}
       <div class="item-row" data-category="{{ tool.tags | join: ' ' }}">
@@ -47,15 +47,14 @@ title: AI4Math 工具
 
     {% if site.tools.size == 0 %}
     <div class="text-center" style="padding: 60px 0; color: var(--color-text-light);">
-      <p>📝 还没有工具条目</p>
-      <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-primary">成为第一个贡献者</a>
+      <p>📝 No tools yet</p>
+      <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-primary">Be the first contributor</a>
     </div>
     {% endif %}
   </div>
 </div>
 
 <script>
-// 简单的筛选功能
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));

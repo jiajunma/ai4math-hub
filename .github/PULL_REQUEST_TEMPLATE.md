@@ -1,21 +1,21 @@
-## 描述
+## Description
 
-简要描述这个 PR 的内容。
+Briefly describe what this PR does.
 
-## 变更类型
+## Change Type
 
-- [ ] 添加新资源（工具/Skill/课程）
-- [ ] 修复错误（链接/信息）
-- [ ] 改进现有内容
-- [ ] 其他
+- [ ] Add new resource (tool/skill/course)
+- [ ] Fix errors (links/information)
+- [ ] Improve existing content
+- [ ] Other
 
-## 检查清单
+## Checklist
 
-- [ ] 我阅读了 [贡献指南](../CONTRIBUTING.md)
-- [ ] 我添加了适当的 front matter
-- [ ] 我检查了链接是否有效
-- [ ] 我的内容符合收录标准
+- [ ] I have read the [Contributing Guide](../CONTRIBUTING.md)
+- [ ] I have added appropriate front matter
+- [ ] I have verified that links are valid
+- [ ] My content meets inclusion criteria
 
-## 相关 Issue
+## Related Issue
 
-Fixes #(issue 编号)
+Fixes #(issue number)

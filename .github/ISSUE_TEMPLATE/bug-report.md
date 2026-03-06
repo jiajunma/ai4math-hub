@@ -1,30 +1,30 @@
 ---
-name: 报告问题
-about: 报告链接失效、信息错误或其他问题
+name: Bug Report
+about: Report broken links, incorrect information, or other issues
 title: '[Bug] '
 labels: bug
 assignees: ''
 
 ---
 
-**问题类型**
-- [ ] 链接失效
-- [ ] 信息错误
-- [ ] 显示问题
-- [ ] 其他
+**Issue Type**
+- [ ] Broken Link
+- [ ] Incorrect Information
+- [ ] Display Issue
+- [ ] Other
 
-**问题描述**
+**Issue Description**
 
-清晰描述问题。
+Describe the issue clearly.
 
-**相关页面**
+**Related Page**
 
-提供出现问题的页面链接。
+Provide the link to the page where the issue occurs.
 
-**期望结果**
+**Expected Result**
 
-描述你认为正确的状态。
+Describe what you think the correct state should be.
 
-**截图（如有）**
+**Screenshots (if any)**
 
-添加截图帮助说明问题。
+Add screenshots to help explain the issue.

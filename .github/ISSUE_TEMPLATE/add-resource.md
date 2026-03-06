@@ -1,29 +1,29 @@
 ---
-name: 添加新资源
-about: 建议添加新的工具、Skill 或课程
+name: Add Resource
+about: Suggest adding a new tool, skill, or course
 title: '[Add] '
 labels: enhancement
 assignees: ''
 
 ---
 
-**资源类型**
-- [ ] 工具
+**Resource Type**
+- [ ] Tool
 - [ ] Skill
-- [ ] 课程
+- [ ] Course
 
-**资源信息**
+**Resource Information**
 
-- **名称**：
-- **简介**：
-- **链接**：
-- **GitHub**（如有）：
-- **标签**：
+- **Name**:
+- **Description**:
+- **Link**:
+- **GitHub** (if any):
+- **Tags**:
 
-**为什么推荐这个资源？**
+**Why recommend this resource?**
 
-简要说明这个资源的价值和特色。
+Briefly explain the value and uniqueness of this resource.
 
-**其他信息**
+**Additional Information**
 
-任何补充说明。
+Any other notes.

@@ -1,31 +1,31 @@
 title: AI4Math Hub
 description: >-
-  人工智能与数学交叉领域的资源导航站。
-  收集AI4Math工具、OpenClaw Skills、课程与教案。
-  开源协作，欢迎贡献！
+  A curated resource hub for AI and Mathematics.
+  Collecting AI4Math tools, OpenClaw Skills, courses, and educational materials.
+  Open source and community-driven. Contributions welcome!
 baseurl: ""
 url: "https://jiajunma.github.io"
 baseurl: "/ai4math-hub"
 repository: jiajunma/ai4math-hub
 
-# 作者信息
+# Author info
 author:
   name: AI4Math Community
   email: contact@ai4math.org
 
-# 构建配置
+# Build settings
 markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# 插件
+# Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# 集合配置
+# Collections
 collections:
   tools:
     output: true
@@ -37,7 +37,7 @@ collections:
     output: true
     permalink: /skills/:name/
 
-# 默认布局
+# Default layouts
 defaults:
   - scope:
       path: ""
@@ -55,7 +55,7 @@ defaults:
     values:
       layout: item
 
-# 排除文件
+# Exclude files
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -65,34 +65,34 @@ exclude:
   - vendor/
   - node_modules/
 
-# 自定义变量
+# Custom variables
 github_url: https://github.com/jiajunma/ai4math-hub
 discord_invite: https://discord.gg/ai4math
 
-# 分类配置
+# Category configuration
 categories:
   tools:
-    - name: 形式化证明
+    - name: Formal Proof
       slug: formalization
-    - name: 符号计算
+    - name: Symbolic Computation
       slug: symbolic
-    - name: 定理证明辅助
+    - name: Theorem Proving Assistance
       slug: theorem-proving
-    - name: 数学可视化
+    - name: Mathematical Visualization
       slug: visualization
-    - name: LaTeX工具
+    - name: LaTeX Tools
       slug: latex
   skills:
     - name: OpenClaw Skills
       slug: openclaw
     - name: Claude/ChatGPT Skills
       slug: llm-skills
-    - name: Prompt工程
+    - name: Prompt Engineering
       slug: prompt-engineering
   courses:
-    - name: Lean教程
+    - name: Lean Tutorials
       slug: lean
-    - name: 形式化数学
+    - name: Formal Mathematics
       slug: formal-math
-    - name: AI+数学研究
+    - name: AI+Math Research
       slug: ai-math-research

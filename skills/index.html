@@ -7,21 +7,21 @@ title: Agent Skills
   <div class="container">
     <span class="item-category">Skills</span>
     <h1>⚡ Agent Skills</h1>
-    <p class="item-description">OpenClaw、Claude Code 等 AI Agent 的 Skills 集合</p>
+    <p class="item-description">Skills for OpenClaw, Claude Code, and other AI Agents</p>
   </div>
 </div>
 
 <div class="section">
   <div class="container">
-    <!-- 分类筛选 -->
+    <!-- Category filters -->
     <div class="filter-bar">
-      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="openclaw">OpenClaw</button>
       <button class="filter-btn" data-filter="claude">Claude</button>
-      <button class="filter-btn" data-filter="general">通用</button>
+      <button class="filter-btn" data-filter="general">General</button>
     </div>
 
-    <!-- Skills列表 -->
+    <!-- Skills list -->
     <div class="items-list">
       {% for skill in site.skills %}
       <div class="item-row" data-category="{{ skill.type }}">
@@ -45,8 +45,8 @@ title: Agent Skills
 
     {% if site.skills.size == 0 %}
     <div class="text-center" style="padding: 60px 0; color: var(--color-text-light);">
-      <p>📝 还没有 Skills 条目</p>
-      <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-primary">成为第一个贡献者</a>
+      <p>📝 No skills yet</p>
+      <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-primary">Be the first contributor</a>
     </div>
     {% endif %}
   </div>

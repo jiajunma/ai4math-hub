@@ -1,88 +1,88 @@
 ---
 title: "Theorem Proving in Lean 4"
-description: Lean 4 官方教程，系统学习定理证明和依赖类型理论
+description: Official Lean 4 tutorial for systematically learning theorem proving and dependent type theory
 instructor: Jeremy Avigad, Leonardo de Moura, Soonho Kong, Sebastian Ullrich
-platform: Lean 官方
+platform: Lean Official
 url: https://lean-lang.org/theorem_proving_in_lean4/
 github: https://github.com/leanprover/theorem_proving_in_lean4
-level: 初级
-language: 英文
-format: 文档
+level: Beginner
+language: English
+format: Documentation
 icon: 📖
 tags: [lean, tutorial, theorem-proving, dependent-types]
-prerequisites: [基础数学知识, 编程基础]
+prerequisites: [Basic math knowledge, programming basics]
 ---
 
-## 课程简介
+## Course Introduction
 
-《Theorem Proving in Lean 4》是 Lean 4 的官方教程，由 Jeremy Avigad、Leonardo de Moura 等人编写。这是学习 Lean 4 定理证明的系统化入门教材。
+"Theorem Proving in Lean 4" is the official tutorial for Lean 4, written by Jeremy Avigad, Leonardo de Moura, and others. This is a systematic introductory textbook for learning theorem proving in Lean 4.
 
-全书涵盖：
-- 依赖类型理论基础
-- 命题逻辑和证明
-- 量词和相等
-- 归纳类型
-- 归纳和递归
-- 结构体和记录
-- 类型类
-- 元编程基础
+The book covers:
+- Foundations of dependent type theory
+- Propositional logic and proofs
+- Quantifiers and equality
+- Inductive types
+- Induction and recursion
+- Structures and records
+- Type classes
+- Metaprogramming basics
 
-## 章节概览
+## Chapter Overview
 
-### 第一部分：基础
+### Part I: Foundations
 
-1. **Introduction** - 介绍
-2. **Dependent Type Theory** - 依赖类型理论
-3. **Propositions and Proofs** - 命题和证明
-4. **Quantifiers and Equality** - 量词和相等
-5. **Tactics** - 证明策略
-6. **Interacting with Lean** - 与 Lean 交互
+1. **Introduction** - Introduction
+2. **Dependent Type Theory** - Dependent type theory
+3. **Propositions and Proofs** - Propositions and proofs
+4. **Quantifiers and Equality** - Quantifiers and equality
+5. **Tactics** - Proof tactics
+6. **Interacting with Lean** - Interacting with Lean
 
-### 第二部分：进阶
+### Part II: Advanced Topics
 
-7. **Inductive Types** - 归纳类型
-8. **Induction and Recursion** - 归纳和递归
-9. **Structures and Records** - 结构体和记录
-10. **Type Classes** - 类型类
-11. **The Conversion Tactic Mode** - 转换策略模式
+7. **Inductive Types** - Inductive types
+8. **Induction and Recursion** - Induction and recursion
+9. **Structures and Records** - Structures and records
+10. **Type Classes** - Type classes
+11. **The Conversion Tactic Mode** - Conversion tactic mode
 
-### 第三部分：高级主题
+### Part III: Advanced Topics
 
-12. **Axioms and Computation** - 公理和计算
-13. **Theorem Proving in Lean 4** - 高级定理证明
+12. **Axioms and Computation** - Axioms and computation
+13. **Theorem Proving in Lean 4** - Advanced theorem proving
 
-## 学习建议
+## Learning Tips
 
-### 阅读顺序
+### Reading Order
 
-建议按章节顺序阅读，每章都有配套的练习。
+Read chapters in order; each chapter includes accompanying exercises.
 
-### 实践方法
+### Practice Method
 
-1. **安装 Lean 4**：按照官方指南设置环境
-2. **克隆仓库**：`git clone https://github.com/leanprover/theorem_proving_in_lean4.git`
-3. **边读边练**：每章都有 `.lean` 文件供练习
-4. **完成练习**：练习对理解至关重要
+1. **Install Lean 4**: Follow the official guide to set up environment
+2. **Clone repository**: `git clone https://github.com/leanprover/theorem_proving_in_lean4.git`
+3. **Practice while reading**: Each chapter has `.lean` files for practice
+4. **Complete exercises**: Exercises are essential for understanding
 
-### 推荐时间
+### Recommended Time
 
-- 完整学完：20-40 小时
-- 每天 1-2 小时：2-4 周
+- Complete course: 20-40 hours
+- 1-2 hours daily: 2-4 weeks
 
-## 配套资源
+## Additional Resources
 
-- [在线阅读](https://lean-lang.org/theorem_proving_in_lean4/)
-- [PDF 下载](https://lean-lang.org/theorem_proving_in_lean4/theorem_proving_in_lean4.pdf)
-- [源码仓库](https://github.com/leanprover/theorem_proving_in_lean4)
+- [Read Online](https://lean-lang.org/theorem_proving_in_lean4/)
+- [PDF Download](https://lean-lang.org/theorem_proving_in_lean4/theorem_proving_in_lean4.pdf)
+- [Source Repository](https://github.com/leanprover/theorem_proving_in_lean4)
 
-## 前置知识
+## Prerequisites
 
-- 基础数学知识（高中及以上）
-- 基本编程概念
-- 对形式化方法有兴趣
+- Basic mathematics knowledge (high school level and above)
+- Basic programming concepts
+- Interest in formal methods
 
-## 后续学习
+## Next Steps
 
-- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/) - 数学导向
-- [Functional Programming in Lean](https://lean-lang.org/functional_programming_in_lean/) - 函数式编程
-- [Metaprogramming in Lean 4](https://leanprover-community.github.io/lean4-metaprogramming-book/) - 元编程
+- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/) - Math-oriented
+- [Functional Programming in Lean](https://lean-lang.org/functional_programming_in_lean/) - Functional programming
+- [Metaprogramming in Lean 4](https://leanprover-community.github.io/lean4-metaprogramming-book/) - Metaprogramming

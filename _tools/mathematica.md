@@ -1,93 +1,93 @@
 ---
 title: Mathematica / Wolfram Language
-description: 功能强大的符号计算系统，涵盖数学、科学、工程的各个领域
-category: 符号计算
+description: Powerful symbolic computation system covering all areas of mathematics, science, and engineering
+category: Symbolic Computation
 icon: 🔷
 tags: [mathematica, wolfram, symbolic-computation, visualization]
-difficulty: 中级
-cost: 付费
+difficulty: Intermediate
+cost: Paid
 url: https://www.wolfram.com/mathematica/
 docs: https://reference.wolfram.com/language/
 ---
 
-## 简介
+## Introduction
 
-Mathematica（核心语言为 Wolfram Language）是由 Wolfram Research 开发的符号计算系统。它在数学、科学、工程等领域有着广泛的应用。
+Mathematica (with core language Wolfram Language) is a symbolic computation system developed by Wolfram Research. It has wide applications in mathematics, science, engineering, and many other fields.
 
-## 主要特性
+## Key Features
 
-### 🔢 符号计算
-- 代数运算
-- 微积分
-- 微分方程
-- 线性代数
-- 数论
+### 🔢 Symbolic Computation
+- Algebraic operations
+- Calculus
+- Differential equations
+- Linear algebra
+- Number theory
 
-### 📊 可视化
-- 2D/3D 绘图
-- 动态交互式图形
-- 统计可视化
+### 📊 Visualization
+- 2D/3D plotting
+- Dynamic interactive graphics
+- Statistical visualization
 
-### 🧠 知识集成
-- Wolfram Knowledgebase 集成
-- 自然语言理解
-- 实体和计算知识
+### 🧠 Knowledge Integration
+- Wolfram Knowledgebase integration
+- Natural language understanding
+- Entity and computational knowledge
 
-### 📝 文档系统
-- 交互式笔记本
-- 富文本支持
-- 可计算文档
+### 📝 Documentation System
+- Interactive notebooks
+- Rich text support
+- Computable documents
 
-## 定价
+## Pricing
 
-- **桌面版**: 永久许可或订阅
-- **云端版**: [Wolfram Cloud](https://www.wolframcloud.com/) 免费基础版
-- **学生版**: 教育优惠
+- **Desktop**: Perpetual license or subscription
+- **Cloud**: [Wolfram Cloud](https://www.wolframcloud.com/) free basic tier
+- **Student**: Educational discount available
 
-## 快速开始
+## Quick Start
 
-### Wolfram Cloud（免费）
+### Wolfram Cloud (Free)
 
 ```
 https://www.wolframcloud.com/
 ```
 
-### 桌面版
+### Desktop
 
-下载并安装后，启动 Wolfram Notebook。
+Download and install, then launch Wolfram Notebook.
 
-## 示例代码
+## Example Code
 
 ```mathematica
-(* 解方程 *)
+(* Solve equations *)
 Solve[x^2 - 2 x + 1 == 0, x]
 
-(* 计算积分 *)
+(* Calculate integrals *)
 Integrate[Sin[x]^2, x]
 
-(* 绘制函数 *)
+(* Plot functions *)
 Plot[Sin[x], {x, 0, 2 Pi}]
 
-(* 3D 图形 *)
+(* 3D graphics *)
 Plot3D[Sin[x y], {x, 0, 3}, {y, 0, 3}]
 
-(* 符号矩阵运算 *)
+(* Symbolic matrix operations *)
 MatrixExp[{{0, 1}, {-1, 0}} t]
 ```
 
 ## Wolfram Alpha
 
-免费的计算知识引擎：
+Free computational knowledge engine:
 - [wolframalpha.com](https://www.wolframalpha.com/)
 
-## 学习资源
+## Learning Resources
 
 - [Wolfram Documentation](https://reference.wolfram.com/language/)
-- [Wolfram U](https://www.wolfram.com/wolfram-u/) - 免费课程
+- [Wolfram U](https://www.wolfram.com/wolfram-u/) - Free courses
 - [Wolfram Community](https://community.wolfram.com/)
 
-## 相关工具
+## Related Tools
 
-- [Wolfram Player](https://www.wolfram.com/player/) - 免费查看器
-- [Wolfram Engine](https://www.wolfram.com/engine/) - 开发者免费
-- [WolframScript](https://www.wolfram.com/wolframscript/) - 命令行接口
+- [Wolfram Player](https://www.wolfram.com/player/) - Free viewer
+- [Wolfram Engine](https://www.wolfram.com/engine/) - Free for developers
+- [WolframScript](https://www.wolfram.com/wolframscript/) - Command line interface

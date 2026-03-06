@@ -1,6 +1,6 @@
 ---
 title: pdf-reader
-description: 读取和提取 PDF 文件中的文本内容，支持 OCR 识别扫描版 PDF
+description: Read and extract text from PDF files, with OCR support for scanned/image-based PDFs
 type: openclaw
 icon: 📖
 tags: [pdf, ocr, text-extraction, document]
@@ -9,64 +9,64 @@ install_url: https://clawhub.com/skills/pdf-reader
 source_url: https://github.com/openclaw/skills/tree/main/pdf-reader
 ---
 
-## 功能
+## Features
 
-pdf-reader 提供全面的 PDF 文本提取能力。
+pdf-reader provides comprehensive PDF text extraction capabilities.
 
-### 主要特性
+### Main Features
 
-- **文本提取**: 从可搜索 PDF 中提取纯文本
-- **OCR 支持**: 识别扫描版/图像版 PDF
-- **结构化输出**: 保留段落和页面结构
-- **多语言**: 支持中文、英文等多种语言
+- **Text Extraction**: Extract plain text from searchable PDFs
+- **OCR Support**: Recognize scanned/image-based PDFs
+- **Structured Output**: Preserve paragraph and page structure
+- **Multilingual**: Support for Chinese, English, and other languages
 
-## 安装
+## Installation
 
 ```bash
 claw skills install pdf-reader
 ```
 
-## 使用示例
+## Usage Examples
 
-### 提取文本
-
-```
-提取这份 PDF 的文本内容：[上传 PDF]
-```
-
-### OCR 识别
+### Extract Text
 
 ```
-对这份扫描版 PDF 进行 OCR：[上传扫描 PDF]
+Extract the text content from this PDF: [upload PDF]
 ```
 
-### 按页提取
+### OCR Recognition
 
 ```
-提取 PDF 第 5-10 页的内容
+Perform OCR on this scanned PDF: [upload scanned PDF]
 ```
 
-## OCR 引擎
+### Extract by Page
 
-使用国产 OCR 服务实现高质量识别：
+```
+Extract content from pages 5-10 of the PDF
+```
+
+## OCR Engines
+
+Uses domestic OCR services for high-quality recognition:
 
 - Silicon Flow DeepSeek OCR
-- 其他云端 OCR 服务
+- Other cloud OCR services
 
-## 适用场景
+## Use Cases
 
-- 📄 文档数字化
-- 🔍 信息检索
-- 📝 内容整理
-- 📚 文献处理
+- 📄 Document digitization
+- 🔍 Information retrieval
+- 📝 Content organization
+- 📚 Literature processing
 
-## 注意事项
+## Notes
 
-- OCR 需要联网调用云端服务
-- 复杂排版的 PDF 可能需要手动调整
-- 数学公式的 OCR 准确率取决于复杂度
+- OCR requires internet connection to call cloud services
+- Complex layouts may require manual adjustment
+- Mathematical formula OCR accuracy depends on complexity
 
-## 相关 Skills
+## Related Skills
 
-- [math-paper-analyzer](./math-paper-analyzer) - 分析数学论文结构
-- [latex-pdf](./latex-pdf) - LaTeX 编译
+- [math-paper-analyzer](./math-paper-analyzer) - Analyze mathematical paper structure
+- [latex-pdf](./latex-pdf) - LaTeX compilation

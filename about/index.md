@@ -1,69 +1,69 @@
 ---
 layout: page
-title: 关于
+title: About
 ---
 
-# 关于 AI4Math Hub
+# About AI4Math Hub
 
-## 我们的使命
+## Our Mission
 
-AI4Math Hub 是一个致力于连接**人工智能**与**数学**的社区驱动资源导航站。
+AI4Math Hub is a community-driven resource hub at the intersection of **Artificial Intelligence** and **Mathematics**.
 
-我们相信：
-- 🤖 AI 将深刻改变数学研究和教学方式
-- 🧮 形式化数学是数学与计算结合的桥梁  
-- 🤝 开放协作是加速这一领域发展的最佳方式
+We believe:
+- 🤖 AI will fundamentally change mathematical research and education
+- 🧮 Formal mathematics is the bridge between math and computation  
+- 🤝 Open collaboration is the best way to accelerate this field
 
-## 什么是 AI4Math？
+## What is AI4Math?
 
-AI4Math 是人工智能与数学的交叉领域，包括但不限于：
+AI4Math is the interdisciplinary field combining AI and Mathematics, including:
 
-- **自动定理证明**：使用 AI 辅助或自动生成数学证明
-- **形式化数学**：将数学知识转化为计算机可验证的形式
-- **数学教育 AI**：智能化的数学学习辅助工具
-- **符号-神经混合方法**：结合符号计算与神经网络的优势
-- **数学知识库构建**：结构化的数学知识表示与管理
+- **Automated Theorem Proving**: Using AI to assist or automatically generate mathematical proofs
+- **Formal Mathematics**: Transforming mathematical knowledge into computer-verifiable form
+- **Math Education AI**: Intelligent tutoring systems for mathematics learning
+- **Symbolic-Neural Hybrid Methods**: Combining symbolic computation with neural networks
+- **Mathematical Knowledge Bases**: Structured representation and management of mathematical knowledge
 
-## 我们的资源
+## Our Resources
 
-### 🛠️ 工具
-收集 AI4Math 领域的各类工具：
-- 形式化证明系统（Lean、Coq、Isabelle 等）
-- AI 辅助数学工具
-- 数学可视化工具
-- LaTeX 相关工具
+### 🛠️ Tools
+A collection of tools in the AI4Math space:
+- Formal proof assistants (Lean, Coq, Isabelle, etc.)
+- AI-assisted mathematical tools
+- Mathematical visualization tools
+- LaTeX-related tools
 
 ### ⚡ Skills
-AI Agent 在数学领域的扩展能力：
+Extended capabilities for AI Agents in mathematics:
 - OpenClaw Skills
-- Claude Code 扩展
-- Prompt 工程技巧
+- Claude Code extensions
+- Prompt engineering techniques
 
-### 📚 课程
-从入门到进阶的学习资源：
-- Lean 官方教程
-- 形式化数学课程
-- AI+数学研究前沿
+### 📚 Courses
+Learning resources from beginner to advanced:
+- Official Lean tutorials
+- Formal mathematics courses
+- AI+Math research frontiers
 
-## 开源协作
+## Open Source Collaboration
 
-本项目采用 [MIT 许可证](https://github.com/ai4math/ai4math-hub/blob/main/LICENSE) 开源，欢迎各种形式的贡献：
+This project is open-sourced under the [MIT License](https://github.com/jiajunma/ai4math-hub/blob/main/LICENSE). Contributions of all forms are welcome:
 
-- 📝 **添加资源**：发现好工具/课程/Skill？提交 PR！
-- 🐛 **报告问题**：链接失效或信息错误？开 Issue！
-- 💡 **提出建议**：有更好的想法？告诉我们！
+- 📝 **Add Resources**: Found a great tool/course/Skill? Submit a PR!
+- 🐛 **Report Issues**: Broken links or incorrect info? Open an issue!
+- 💡 **Suggest Improvements**: Have better ideas? Let us know!
 
-查看 [贡献指南]({{ '/CONTRIBUTING.html' | relative_url }}) 了解如何参与。
+Check the [Contributing Guide]({{ '/CONTRIBUTING.html' | relative_url }}) for how to participate.
 
-## 社区
+## Community
 
-- **GitHub**: [ai4math/ai4math-hub]({{ site.github_url }})
-- **Discord**: [加入讨论]({{ site.discord_invite }})
+- **GitHub**: [jiajunma/ai4math-hub]({{ site.github_url }})
+- **Discord**: [Join the discussion]({{ site.discord_invite }})
 
-## 致谢
+## Acknowledgments
 
-感谢所有贡献者让这个项目成为可能！
+Thanks to all contributors who make this project possible!
 
 ---
 
-*AI4Math Hub - 连接 AI 与数学的桥梁*
+*AI4Math Hub - Bridging AI and Mathematics*

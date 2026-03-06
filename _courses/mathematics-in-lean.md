@@ -1,109 +1,108 @@
 ---
 title: "Mathematics in Lean"
-description: 使用 Lean 4 学习形式化数学，从基础代数到高等数学
+description: Learn formal mathematics using Lean 4, from basic algebra to advanced mathematics
 instructor: Jeremy Avigad, Patrick Massot
 platform: Lean Community
 url: https://leanprover-community.github.io/mathematics_in_lean/
 github: https://github.com/leanprover-community/mathematics_in_lean
-level: 中级
-language: 英文
-format: 互动文档
+level: Intermediate
+language: English
+format: Interactive Documentation
 icon: 🧮
 tags: [lean, mathematics, algebra, analysis, topology]
-prerequisites: [Theorem Proving in Lean 4, 大学数学基础]
+prerequisites: [Theorem Proving in Lean 4, college-level mathematics]
 ---
 
-## 课程简介
+## Course Introduction
 
-《Mathematics in Lean》是一本使用 Lean 4 教授形式化数学的教材。与侧重编程语言特性的教程不同，本书专注于数学内容本身。
+"Mathematics in Lean" is a textbook for learning formal mathematics using Lean 4. Unlike tutorials focused on programming language features, this book focuses on mathematical content itself.
 
-通过学习本书，你将：
-- 在 Lean 中实现基础代数和分析
-- 理解数学库 mathlib4 的结构
-- 掌握形式化数学证明的方法
+Through this book, you will:
+- Implement basic algebra and analysis in Lean
+- Understand the structure of the mathlib4 library
+- Master methods for formalizing mathematical proofs
 
-## 主要内容
+## Main Content
 
-### 第一部分：基础
+### Part I: Foundations
 
-1. **Introduction** - 介绍
-2. **Basics** - 基础
-   - 计算
-   - 证明相等
-   - 使用定理
-   - 更多例子
+1. **Introduction** - Introduction
+2. **Basics** - Basics
+   - Calculation
+   - Proving equalities
+   - Using theorems
+   - More examples
 
-3. **Logic** - 逻辑
-   - 蕴含和全称量词
-   - 存在量词
-   - 否定
-   - 合取和析取
-   - 反证法
+3. **Logic** - Logic
+   - Implication and universal quantification
+   - Existential quantification
+   - Negation
+   - Conjunction and disjunction
+   - Proof by contradiction
 
-4. **Sets and Functions** - 集合与函数
-   - 集合
-   - 函数
-   - 等价关系
+4. **Sets and Functions** - Sets and functions
+   - Sets
+   - Functions
+   - Equivalence relations
 
-### 第二部分：代数
+### Part II: Algebra
 
-5. **Number Theory** - 数论
-6. **Abstract Algebra** - 抽象代数
-   - 群
-   - 环
-   - 域
+5. **Number Theory** - Number theory
+6. **Abstract Algebra** - Abstract algebra
+   - Groups
+   - Rings
+   - Fields
 
-### 第三部分：分析
+### Part III: Analysis
 
-7. **Topology** - 拓扑
-8. **Analysis** - 分析
-   - 实数
-   - 连续性
-   - 微分
+7. **Topology** - Topology
+8. **Analysis** - Analysis
+   - Real numbers
+   - Continuity
+   - Differentiation
 
-## 学习方法
+## Learning Method
 
-### 互动练习
+### Interactive Exercises
 
-本书使用 Lean 的 [live](https://lean-lang.org/lean4/doc/dev/index.html) 功能，可以直接在浏览器中运行代码。
+This book uses Lean's [live](https://lean-lang.org/lean4/doc/dev/index.html) feature, allowing code to run directly in the browser.
 
-### 本地运行
+### Local Setup
 
 ```bash
-# 克隆仓库
+# Clone repository
 git clone https://github.com/leanprover-community/mathematics_in_lean.git
 
-# 进入目录
+# Enter directory
 cd mathematics_in_lean
 
-# 安装依赖
+# Install dependencies
 lake exe cache get
 
-# 在 VS Code 中打开
+# Open in VS Code
 code .
 ```
 
-### 学习节奏
+### Learning Pace
 
-- 建议每章花费 2-4 小时
-- 完成所有练习非常重要
-- 可以跳过熟悉的章节
+- Recommend 2-4 hours per chapter
+- Completing all exercises is very important
+- Can skip familiar chapters
 
-## 前置要求
+## Prerequisites
 
-- 完成 [Theorem Proving in Lean 4](../theorem-proving-in-lean4/) 或同等水平
-- 大学数学基础（线性代数、微积分、抽象代数）
-- 愿意学习新的证明方式
+- Complete [Theorem Proving in Lean 4](../theorem-proving-in-lean4/) or equivalent level
+- College-level mathematics foundation (linear algebra, calculus, abstract algebra)
+- Willingness to learn new proof methods
 
-## 相关资源
+## Related Resources
 
-- [mathlib4](https://github.com/leanprover-community/mathlib4) - 数学库
-- [Lean Zulip](https://leanprover.zulipchat.com/) - 社区讨论
-- [Mathematics in Lean 中文版](https://gitlhub.com/) - 社区翻译（如有）
+- [mathlib4](https://github.com/leanprover-community/mathlib4) - Mathematical library
+- [Lean Zulip](https://leanprover.zulipchat.com/) - Community discussion
 
-## 后续方向
+## Next Directions
 
-完成本书后，你可以：
-- 阅读 mathlib4 源码
-- 为 mathlib4 贡献代码
-- 尝试形式化自己的数学项目
+After completing this book, you can:
+- Read mathlib4 source code
+- Contribute to mathlib4
+- Try formalizing your own mathematical projects

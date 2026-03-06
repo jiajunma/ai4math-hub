@@ -1,59 +1,59 @@
 # AI4Math Hub
 
-🧮 人工智能与数学交叉领域的资源导航站
+🧮 A curated resource hub for AI and Mathematics
 
-[🌐 在线访问](https://ai4math.github.io) · [📖 贡献指南](./CONTRIBUTING.md) · [💬 Discord](https://discord.gg/ai4math)
+[🌐 Visit Website](https://jiajunma.github.io/ai4math-hub/) · [📖 Contributing Guide](./CONTRIBUTING.md) · [💬 Discord](https://discord.gg/ai4math)
 
 ---
 
-## 简介
+## Introduction
 
-AI4Math Hub 是一个社区驱动的资源导航站，汇集：
+AI4Math Hub is a community-driven resource hub collecting:
 
-- 🛠️ **AI4Math 工具** - 形式化证明、符号计算、定理证明辅助
-- ⚡ **Agent Skills** - OpenClaw、Claude Code 等 AI Agent 扩展
-- 📚 **课程与教案** - 从入门到进阶的学习资源
+- 🛠️ **AI4Math Tools** - Formal proof assistants, symbolic computation, theorem provers
+- ⚡ **Agent Skills** - OpenClaw, Claude Code, and other AI Agent extensions
+- 📚 **Courses & Materials** - Learning resources from beginner to advanced
 
-## 快速开始
+## Quick Start
 
-### 浏览资源
+### Browse Resources
 
-- [查看工具](./tools/)
-- [浏览 Skills](./skills/)
-- [查找课程](./courses/)
+- [View Tools](./tools/)
+- [Browse Skills](./skills/)
+- [Find Courses](./courses/)
 
-### 参与贡献
+### Contribute
 
-我们欢迎各种形式的贡献！查看 [贡献指南](./CONTRIBUTING.md) 了解详情。
+We welcome all forms of contributions! Check the [Contributing Guide](./CONTRIBUTING.md) for details.
 
-**快速贡献步骤：**
+**Quick contribution steps:**
 
-1. Fork 本仓库
-2. 在 `_tools/`、`_skills/` 或 `_courses/` 目录下添加新的 Markdown 文件
-3. 提交 Pull Request
+1. Fork this repository
+2. Add new Markdown files to `_tools/`, `_skills/`, or `_courses/`
+3. Submit a Pull Request
 
-## 技术栈
+## Tech Stack
 
-- [Jekyll](https://jekyllrb.com/) - 静态站点生成器
-- [GitHub Pages](https://pages.github.com/) - 免费托管
+- [Jekyll](https://jekyllrb.com/) - Static site generator
+- [GitHub Pages](https://pages.github.com/) - Free hosting
 
-## 本地开发
+## Local Development
 
 ```bash
-# 克隆仓库
-git clone https://github.com/ai4math/ai4math-hub.git
+# Clone repository
+git clone https://github.com/jiajunma/ai4math-hub.git
 cd ai4math-hub
 
-# 安装依赖
+# Install dependencies
 bundle install
 
-# 启动本地服务器
+# Start local server
 bundle exec jekyll serve
 
-# 访问 http://localhost:4000
+# Visit http://localhost:4000
 ```
 
-## 许可证
+## License
 
 [MIT](./LICENSE)
 

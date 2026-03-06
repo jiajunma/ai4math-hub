@@ -1,6 +1,6 @@
 ---
 title: latex-pdf
-description: 编译 LaTeX 文档到 PDF，支持多种引擎和参考文献处理
+description: Compile LaTeX documents to PDF with support for multiple engines and bibliography processing
 type: openclaw
 icon: 📄
 tags: [latex, pdf, compilation, document]
@@ -9,69 +9,69 @@ install_url: https://clawhub.com/skills/latex-pdf
 source_url: https://github.com/openclaw/skills/tree/main/latex-pdf
 ---
 
-## 功能
+## Features
 
-latex-pdf 提供 LaTeX 文档的编译和转换功能。
+latex-pdf provides LaTeX document compilation and conversion capabilities.
 
-### 支持的引擎
+### Supported Engines
 
-- **pdflatex** - 标准编译
-- **xelatex** - 支持 Unicode 和系统字体
-- **lualatex** - Lua 脚本扩展
+- **pdflatex** - Standard compilation
+- **xelatex** - Unicode and system font support
+- **lualatex** - Lua scripting extensions
 
-### 参考文献支持
+### Bibliography Support
 
 - BibTeX
 - Biber
 - natbib
 - biblatex
 
-## 安装
+## Installation
 
 ```bash
 claw skills install latex-pdf
 ```
 
-## 使用示例
+## Usage Examples
 
-### 编译简单文档
-
-```
-将这份 LaTeX 编译成 PDF：[粘贴代码]
-```
-
-### 使用特定引擎
+### Compile Simple Document
 
 ```
-用 xelatex 编译这份文档：[上传 .tex 文件]
+Compile this LaTeX to PDF: [paste code]
 ```
 
-### 处理参考文献
+### Use Specific Engine
 
 ```
-编译包含参考文献的 LaTeX 项目：[上传包含 .bib 的文件夹]
+Compile this document with xelatex: [upload .tex file]
 ```
 
-## 特性
+### Process Bibliography
 
-- ✅ 自动多遍编译
-- ✅ 处理参考文献和交叉引用
-- ✅ 支持中文（通过 ctex 等宏包）
-- ✅ 图表和公式支持
+```
+Compile this LaTeX project with bibliography: [upload folder with .bib]
+```
 
-## 适用场景
+## Features
 
-- 📝 论文写作
-- 📊 报告生成
-- 📑 幻灯片制作（beamer）
-- 📚 书籍排版
+- ✅ Automatic multi-pass compilation
+- ✅ Bibliography and cross-reference handling
+- ✅ Chinese support (via ctex and other packages)
+- ✅ Figure and formula support
 
-## 限制
+## Use Cases
 
-- 需要系统安装 TeX Live 或 MiKTeX
-- 某些高级宏包可能需要额外配置
+- 📝 Academic paper writing
+- 📊 Report generation
+- 📑 Presentation slides (beamer)
+- 📚 Book typesetting
 
-## 相关工具
+## Limitations
+
+- Requires TeX Live or MiKTeX installed on the system
+- Some advanced packages may require additional configuration
+
+## Related Tools
 
 - [TeX Live](https://tug.org/texlive/)
 - [MiKTeX](https://miktex.org/)

@@ -1,6 +1,6 @@
 ---
 title: math-paper-analyzer
-description: 分析数学论文，提取定义、定理、引理、命题等结构并生成依赖图
+description: Analyze mathematical papers, extract definitions, theorems, lemmas, propositions, and generate dependency graphs
 type: openclaw
 icon: 📊
 tags: [paper-analysis, visualization, latex, pdf, dependency-graph]
@@ -9,44 +9,44 @@ install_url: https://clawhub.com/skills/math-paper-analyzer
 source_url: https://github.com/openclaw/skills/tree/main/math-paper-analyzer
 ---
 
-## 功能
+## Features
 
-math-paper-analyzer 是一个专门用于分析数学论文结构的 OpenClaw Skill。
+math-paper-analyzer is an OpenClaw Skill specifically designed for analyzing the structure of mathematical papers.
 
-### 主要能力
+### Main Capabilities
 
-- **实体提取**: 从 PDF 或 LaTeX 中提取定义、定理、引理、命题、推论
-- **依赖分析**: 分析定理之间的依赖关系
-- **可视化**: 生成数学结构的依赖图
-- **arXiv 支持**: 直接分析 arXiv 论文
+- **Entity Extraction**: Extract definitions, theorems, lemmas, propositions, corollaries from PDF or LaTeX
+- **Dependency Analysis**: Analyze dependencies between theorems
+- **Visualization**: Generate dependency graphs of mathematical structures
+- **arXiv Support**: Directly analyze arXiv papers
 
-## 安装
+## Installation
 
 ```bash
 claw skills install math-paper-analyzer
 ```
 
-## 使用示例
+## Usage Examples
 
-### 分析本地 PDF
-
-```
-请分析这篇论文的数学结构：[上传 PDF]
-```
-
-### 分析 arXiv 论文
+### Analyze Local PDF
 
 ```
-分析 arXiv:2309.12345 的数学结构
+Please analyze the mathematical structure of this paper: [Upload PDF]
 ```
 
-### 生成依赖图
+### Analyze arXiv Paper
 
 ```
-提取这篇论文的所有定理，并生成依赖关系图
+Analyze the mathematical structure of arXiv:2309.12345
 ```
 
-## 输出格式
+### Generate Dependency Graph
+
+```
+Extract all theorems from this paper and generate a dependency graph
+```
+
+## Output Format
 
 ```json
 {
@@ -61,20 +61,20 @@ claw skills install math-paper-analyzer
 }
 ```
 
-## 适用场景
+## Use Cases
 
-- 📚 论文阅读和理解
-- 📝 文献综述整理
-- 🎓 教学材料准备
-- 🔍 研究领域分析
+- 📚 Paper reading and comprehension
+- 📝 Literature review organization
+- 🎓 Teaching material preparation
+- 🔍 Research field analysis
 
-## 技术栈
+## Tech Stack
 
-- 基于 LLM 的文本分析
-- LaTeX/PDF 解析
-- 图可视化
+- LLM-based text analysis
+- LaTeX/PDF parsing
+- Graph visualization
 
-## 相关资源
+## Related Resources
 
 - [SKILL.md](https://github.com/openclaw/skills/tree/main/math-paper-analyzer/SKILL.md)
-- [使用指南](https://docs.openclaw.ai/skills/math-paper-analyzer)
+- [Usage Guide](https://docs.openclaw.ai/skills/math-paper-analyzer)

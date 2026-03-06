@@ -1,29 +1,29 @@
 ---
 layout: default
-title: 课程与教案
+title: Courses & Materials
 ---
 
 <div class="item-header">
   <div class="container">
     <span class="item-category">Courses</span>
-    <h1>📚 课程与教案</h1>
-    <p class="item-description">Lean 教程、形式化数学课程、AI+数学研究资源</p>
+    <h1>📚 Courses & Materials</h1>
+    <p class="item-description">Lean tutorials, formal mathematics courses, and AI+Math research resources</p>
   </div>
 </div>
 
 <div class="section">
   <div class="container">
-    <!-- 分类筛选 -->
+    <!-- Category filters -->
     <div class="filter-bar">
-      <button class="filter-btn active" data-filter="all">全部</button>
-      <button class="filter-btn" data-filter="beginner">初级</button>
-      <button class="filter-btn" data-filter="intermediate">中级</span>
-      <button class="filter-btn" data-filter="advanced">高级</button>
-      <button class="filter-btn" data-filter="chinese">中文</button>
-      <button class="filter-btn" data-filter="english">英文</button>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="beginner">Beginner</button>
+      <button class="filter-btn" data-filter="intermediate">Intermediate</span>
+      <button class="filter-btn" data-filter="advanced">Advanced</button>
+      <button class="filter-btn" data-filter="chinese">Chinese</button>
+      <button class="filter-btn" data-filter="english">English</button>
     </div>
 
-    <!-- 课程列表 -->
+    <!-- Courses list -->
     <div class="items-list">
       {% for course in site.courses %}
       <div class="item-row" data-category="{{ course.level }} {{ course.language }}">
@@ -46,8 +46,8 @@ title: 课程与教案
 
     {% if site.courses.size == 0 %}
     <div class="text-center" style="padding: 60px 0; color: var(--color-text-light);">
-      <p>📝 还没有课程条目</p>
-      <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-primary">成为第一个贡献者</a>
+      <p>📝 No courses yet</p>
+      <a href="{{ '/CONTRIBUTING.html' | relative_url }}" class="btn btn-primary">Be the first contributor</a>
     </div>
     {% endif %}
   </div>
