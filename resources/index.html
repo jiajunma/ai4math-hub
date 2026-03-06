@@ -1,0 +1,41 @@
+---
+layout: default
+title: Resources
+---
+
+<div class="container">
+  <h1>Resources</h1>
+
+  <h2>Companies</h2>
+  <ul class="simple-list">
+    {% for company in site.companies %}
+    <li>
+      <a href="{{ company.website }}" target="_blank">{{ company.title }}</a>
+      <span class="meta">{{ company.category }}{% if company.location %} · {{ company.location }}{% endif %}</span>
+      <p>{{ company.description | truncate: 100 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Projects</h2>
+  <ul class="simple-list">
+    {% for project in site.projects %}
+    <li>
+      <a href="{{ project.github }}" target="_blank">{{ project.title }}</a>
+      {% if project.stars %}<span class="meta">⭐ {{ project.stars }}</span>{% endif %}
+      <p>{{ project.description | truncate: 100 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Tools</h2>
+  <ul class="simple-list">
+    {% for tool in site.tools %}
+    <li>
+      <a href="{{ tool.url }}" target="_blank">{{ tool.title }}</a>
+      <span class="meta">{{ tool.category }}</span>
+      <p>{{ tool.description | truncate: 100 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
