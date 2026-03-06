@@ -4,7 +4,7 @@ description: AI-powered math education platform focused on Olympiad-level proble
 category: AI Math Education
 category_slug: education
 icon: 🎯
-location: USA
+location: Beijing, China (Peking University)
 funding: Seed
 website: https://frenzymath.com
 github: 
@@ -14,7 +14,14 @@ founded: 2024
 
 ## About
 
-Frenzy Math is building an AI tutor specifically designed for competitive mathematics and olympiad-level problem solving. Their platform leverages large language models to provide step-by-step guidance through complex mathematical problems.
+Frenzy Math is an AI-powered mathematics education platform incubated at **Peking University** (北京大学). The company builds AI tutors specifically designed for competitive mathematics and olympiad-level problem solving.
+
+## Background
+
+- **Founded**: 2024 at Peking University
+- **Origin**: Research project from PKU's mathematics and computer science departments
+- **Focus**: Combining AI capabilities with rigorous mathematical pedagogy
+- **Mission**: Democratizing access to world-class mathematics education
 
 ## Products
 
