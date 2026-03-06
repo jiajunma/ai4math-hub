@@ -6,7 +6,7 @@ category_slug: research
 icon: 🏆
 location: Global
 funding: Multi-million dollar
-website: https://aimo.ai
+website: https://www.aimo.ai/
 github: https://github.com/AI-MO
 twitter: 
 founded: 2023
