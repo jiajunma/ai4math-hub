@@ -27,22 +27,22 @@ plugins:
 collections:
   papers:
     output: true
-    permalink: /papers/:name/
+    permalink: /:collection/:name/
   companies:
     output: true
-    permalink: /companies/:name/
+    permalink: /:collection/:name/
   projects:
     output: true
-    permalink: /projects/:name/
+    permalink: /:collection/:name/
   tools:
     output: true
-    permalink: /tools/:name/
+    permalink: /:collection/:name/
   courses:
     output: true
-    permalink: /courses/:name/
+    permalink: /:collection/:name/
   skills:
     output: true
-    permalink: /skills/:name/
+    permalink: /:collection/:name/
 
 # Default layouts
 defaults:
