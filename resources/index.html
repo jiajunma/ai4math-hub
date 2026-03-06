@@ -6,18 +6,74 @@ title: Resources
 <div class="container">
   <h1>Resources</h1>
 
-  <h2>Companies</h2>
+  <h2>Companies — Research Labs</h2>
   <ul class="simple-list">
     {% for company in site.companies %}
+    {% if company.category == "Research Labs" %}
+    <li>
+      <a href="{{ company.website }}" target="_blank">{{ company.title }}</a>
+      <span class="meta">{{ company.location }}</span>
+      <p>{{ company.description | truncate: 100 }}</p>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h2>Companies — AI Math Education</h2>
+  <ul class="simple-list">
+    {% for company in site.companies %}
+    {% if company.category == "AI Math Education" %}
+    <li>
+      <a href="{{ company.website }}" target="_blank">{{ company.title }}</a>
+      <span class="meta">{{ company.location }}</span>
+      <p>{{ company.description | truncate: 100 }}</p>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h2>Companies — Theorem Proving</h2>
+  <ul class="simple-list">
+    {% for company in site.companies %}
+    {% if company.category == "Theorem Proving" %}
+    <li>
+      <a href="{{ company.website }}" target="_blank">{{ company.title }}</a>
+      <span class="meta">{{ company.location }}</span>
+      <p>{{ company.description | truncate: 100 }}</p>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h2>Companies — Math Engines & Tools</h2>
+  <ul class="simple-list">
+    {% for company in site.companies %}
+    {% if company.category == "Math Reasoning Engines" or company.category == "Symbolic Computation" %}
     <li>
       <a href="{{ company.website }}" target="_blank">{{ company.title }}</a>
       <span class="meta">{{ company.category }}{% if company.location %} · {{ company.location }}{% endif %}</span>
       <p>{{ company.description | truncate: 100 }}</p>
     </li>
+    {% endif %}
     {% endfor %}
   </ul>
 
-  <h2>Projects</h2>
+  <h2>Companies — Formal Verification</h2>
+  <ul class="simple-list">
+    {% for company in site.companies %}
+    {% if company.category == "Formal Verification" %}
+    <li>
+      <a href="{{ company.website }}" target="_blank">{{ company.title }}</a>
+      <span class="meta">{{ company.location }}</span>
+      <p>{{ company.description | truncate: 100 }}</p>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <hr>
+
+  <h2>Open Source Projects</h2>
   <ul class="simple-list">
     {% for project in site.projects %}
     <li>
